@@ -90,7 +90,6 @@ header {
 nav {
 	display:flex;
 	justify-content:space-between;
-	background-color:rosybrown;
 	align-items:center;
 }
 
@@ -105,20 +104,6 @@ nav * {
 	text-decoration:none;
 	color:lightgray;
 	font-size:14px;
-}
-
-/* Animations for Nav bar */
-.animate {
-	animation: rotate .3s linear infinite alternate;
-}
-
-@keyframes rotate {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(10deg);
-    }
 }
 
 /* Contains title, button, and image */
@@ -190,9 +175,54 @@ footer p {
     }
     header nav {
         flex-direction:column-reverse;
-
     }
+
     #links {
         flex-direction:column;
+        align-items:center;
+        text-align:center;
+        margin: 20px 0;
     }
+
+    #links a {
+        font-size:28px;
+        padding: 20px;
+        border-bottom: 1px solid dimgray;
+        width: 100%;
+        color: lightslategray;
+    }
+    #links a:nth-child(1) {
+        border-top: 1px solid dimgray;
+    }
+
+    header img {
+        width:50%;
+    }
+
+    #header-title {
+        flex-direction:column;
+        margin-bottom:80px;
+        margin-top: 40px;
+    }
+
+    #start-button {
+        padding: 5px 50px;
+        margin-top:30px;
+    }
+    #header-title img{
+        display:none;
+    }
+    .main {
+        flex-direction:column;
+        width:90%;
+        margin:auto;
+        align-items:center;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    .main > * {
+        width:100%;
+        margin: 20px 0;
+    }
+
 }
